@@ -1,0 +1,305 @@
+body{
+    margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #ff7eb3, #67b8ff);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  list-style: none;
+}
+
+.main-container-page{
+        display: flex;
+        flex-direction: row;
+        width: 800px;
+        height: 500px;
+        background: #2d2d2d;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      
+}
+
+.left-panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background: #2d2d2d;
+    padding: 40px;
+}
+.left-panel > h2{
+    color: #ff7eb3;
+    margin-bottom: 10px;
+}
+.left-panel > p , h1{
+    color: white;
+  margin-bottom: 20px;
+}
+.input-group {
+    display: flex;
+    align-items: center;
+    background: #444;
+    border-radius: 25px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .input-group .icon {
+    margin-right: 10px;
+}
+
+.input-group input {
+    flex: 1;
+    border: none;
+    background: none;
+    color: #fff;
+    outline: none;
+  }
+  
+  .login-btn {
+    background: linear-gradient(to right, #ff7eb3, #67b8ff);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.2em;
+
+  }
+  
+  .login-btn:hover {
+    opacity: 1;
+  }
+
+  .forget-password {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #bbb;
+    text-decoration: underline italic;
+  }
+
+  .right-panel{
+    flex: 1;
+    padding: 40px;
+    background: url('./accf-project/bible.jpg') no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+    }
+    .intro > p {
+      color:#ff7eb3;
+      font-size: large;
+      margin-bottom: 10px;
+    }
+    .social-icons{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    img{
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+    }
+  .intro{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+  }
+  .terms-cond{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    gap: 2px;
+  }
+  .create-acc{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .bottom-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 90px;
+  }
+  a {
+    color: blue;
+    text-decoration: none;
+    font-size: medium;
+  }
+
+  input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 25px 4px;
+    border: initial;
+}
+
+
+/* Desktop Styles (768px and above) */
+@media (min-width: 768px) {
+  .main-container-page {
+    flex-direction: row; /* Ensure horizontal layout */
+    width: 800px;
+    height: 500px;
+  }
+
+  .left-panel {
+    padding: 20px;
+    text-align: left; /* Align text for desktop */
+  }
+}
+
+/* Mobile Styles (up to 767px) */
+@media (max-width: 767px) {
+  .main-container-page {
+    flex-direction: column; /* Stack panels vertically */
+    width: 100%; /* Full width */
+    height: auto; /* Allow height to adjust */
+    background: url('./accf-project/bible.jpg') 
+    no-repeat center/cover;
+    display: flex;
+  }
+
+.right-panel{
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 1;
+  }
+  .intro > p {
+    color:#ff7eb3;
+    font-size: smaller;
+    margin-bottom: 2px;
+  }
+  .social-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  img{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+  }
+.intro{
+  display: flex;
+  gap: 1px;
+  flex-direction: column;
+}
+.terms-cond{
+  display: flex;
+  flex-direction: row;
+  text-align: justify;
+  gap: 0.5px;
+}
+.create-acc{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.bottom-cont{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 20px;
+}
+a {
+  color: blue;
+  text-decoration: none;
+  font-size: medium;
+}
+
+input[type="checkbox" i] {
+  background-color: initial;
+  cursor: default;
+  appearance: auto;
+  box-sizing: border-box;
+  margin: 3px 3px 6px 4px;
+  border: initial
+}
+
+.left-panel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Center-align text for mobile */
+  display: flex;
+}
+.left-panel > h2{
+  color: #ff7eb3;
+  margin-bottom: 2px;
+  font-size: 0.9em;
+}
+.left-panel > p , h1{
+  color: white;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+}
+.input-group {
+  display: flex;
+  align-items: center;
+  background: #444;
+  border-radius: 5px;
+  padding: 2px 3px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.input-group .icon {
+  margin-right: 2px;
+}
+
+.input-group input {
+  flex: 1;
+  border: none;
+  background: none;
+  color: #fff;
+  outline: none;
+  gap: 9px;
+}
+
+.login-btn {
+  background: linear-gradient(to right, #ff7eb3, #67b8ff);
+  border: none;
+  color: #fff;
+  margin-top: 10px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 0.7em;
+}
+
+.login-btn:hover {
+  opacity: 1;
+}
+
+.forget-password {
+  margin-top: 10px;
+  font-size: 0.5em;
+  color: #bbb;
+  text-decoration: underline italic;
+}
+
+}
